@@ -1,0 +1,72 @@
+/* 公共部分 */
+body,div,a,img,p,form,h1,h2,h3,h4,h5,h6,input,textarea,ul,li,dt,dd,dl{margin:0;padding:0;}
+#Logo,#Nav,#Banner,#Content,#Footer{width:900px; margin:0 auto;}
+/*头部logo区域*/
+#Logo{
+	height:80px;
+}
+#logoLink{
+	display:block;
+	width:173px;
+	height:46px;
+	background:url(../Images/logo.gif) no-repeat;
+	float:left;/*为了让ie6和ff显示效果一样，如果不加上这句话，后面的margin-top:20px;两个浏览器解析不一样，大家可以去掉这句话，看看两者显示效果差别*/
+	margin-top:20px;
+}
+/*导航条*/
+#Nav{height:42px;}
+#Nav ul{
+	height:42px;
+	list-style:none;
+	background:#56990c;
+}
+#Nav ul li{height:42px; float:left;}
+#Nav ul li a{
+	display:block;/*转化成块状元素，因链接是内链元素，若想给它定义下面的属性，必须将它转化成块状元素，*/
+	height:42px;	
+	color:#FFF;
+	padding:0 10px;
+	line-height:42px;
+	font-size:14px;
+	font-weight:bold;
+	font-family:Arial;
+	text-decoration:none;/*去除链接样式，默认是有下划线的，加上这句就没有任何样式，下划线也没有了*/
+	float:left;
+}
+#Nav ul li a:hover{background:#68acd3;}
+
+/*Banner*/
+#Banner{
+	height:290px;
+	background:url(../Images/banner.jpg) no-repeat;
+}
+
+/*Content*/
+#Content #ContentL,#Content #ContentR{float:left; padding:15px;}/*为什么都要左侧浮动，如果不明白就去看第二节*/
+#Content #ContentL{width:570px; background:#f0f0f0;}
+#Content #ContentL h1{
+	height:40px;
+	line-height:40px;/*设置行距，目的是保证h1中的文字垂直居中*/
+	font-size:16px;
+	color:#054d73;
+	border-bottom:1px #969696 dashed;/*设置h1的下边框为宽度1像素的虚线*/
+	margin-bottom:10px;/*设置外边距，让h1和下面的内容区域p保持10像素的距离*/
+}
+#Content #ContentL p{
+	font-size:12px;
+	line-height:20px;
+	text-indent:2em;
+}
+#Content #ContentR{width:270px; background:#d3e7f2;}
+
+/*Footer*/
+#Footer{
+	text-align:center;
+	background:#68acd3;
+	padding: 10px 0;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:20px;
+}
+
